@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header class="header">
+        <h1>calc</h1>
+        <h5>THEME</h5>
+        <div class="switcher">
+          <div>
+            <span class="switch-no">1</span>
+            <span class="switch-no">2</span>
+            <span class="switch-no">3</span>
+          </div>
+          <div class="toggle" id="theme-1">
+            <i class="indicator"></i>
+          </div>
+        </div>
+      </header>
+      <div id="screen" class="screen">0</div>
+      <!-- INPUT FIELD -->
+      <div class="buttons">
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item del">DEL</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">+</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">-</div>
+        <div class="item">.</div>
+        <div class="item">0</div>
+        <div class="item">/</div>
+        <div class="item">x</div>
+        <div class="item reset">RESET</div>
+        <div class="item equal">=</div>
+        <div class="item binary-decimal">BIN-DEC</div>
+        <div class="item decimal-binary">DEC-BIN</div>
+        <div class="item decimal-hex">DEC-HEX</div>
+        <div class="item hex-decimal">HEX-DEC</div>
+        <div class="item complement">COMPLEMENT</div>
+        <div class="item second-complement">2'S COMP</div>
+        <div class="item boolean">BOOLEAN</div>
+        <div class="item algebra">ALGEBRA</div>
+      </div>
+    </div>
+    <!-- BOOLEAN EXPRESSION SECTION -->
+    <div id="boolean-section" class="boolean-section">
+      <h3>Boolean Expressions</h3>
+      <input type="text" id="boolean-input" class="boolean-input" placeholder="Enter Boolean expression (e.g., A AND B OR NOT C)">
+      <div class="boolean-buttons">
+        <button id="evaluate-boolean" class="boolean-item">Evaluate</button>
+      </div>
+      <div id="boolean-result" class="boolean-result"></div>
+    </div>
+  </div>
+  <div id="algebra-section" class="algebra-section">
+    <h3>Algebraic Expressions</h3>
+    <input type="text" id="algebra-input" class="algebra-input" placeholder="Enter Algebraic expression (e.g., 2*x + 3*y)">
+    <div class="variable-inputs">
+      <input type="text" id="x-value" class="variable-input" placeholder="Enter value for x">
+      <input type="text" id="y-value" class="variable-input" placeholder="Enter value for y">
+    </div>
+    <div class="algebra-buttons">
+      <button id="evaluate-algebra" class="algebra-item">Evaluate</button>
+    </div>
+    <div id="algebra-result" class="algebra-result"></div>
+  </div>
+</div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.2/math.min.js"></script>
+  </body>
+</html>
